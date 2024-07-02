@@ -1,20 +1,27 @@
-/* Navbar.module.css */
+
 .navbar {
-    background-color: #333;
+    background-color: #e4d8d8;
     color: #fff;
     padding: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  
-  .logo {
-    font-size: 1.5rem;
+
+  .profile {
+    display: flex;
+    align-items: center;
   }
   
+  .profileImage {
+    border-radius: 50%; /* Makes the image rounded */
+    margin-right: 10px; /* Adjust spacing between image and name */
+  }
+
   .navLinks {
     display: flex;
     gap: 1rem;
+    margin-right: 50px;
   }
   
   .nav-link {
@@ -23,10 +30,10 @@
   }
   
   .nav-link:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    color: black
   }
   
-  /* Media query for responsiveness */
   @media (max-width: 768px) {
     .nav-links {
       display: flex;
