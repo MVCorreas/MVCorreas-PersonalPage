@@ -14,8 +14,10 @@
   }
   
   .profileImage {
-    border-radius: 50%; /* Makes the image rounded */
-    margin-right: 10px; /* Adjust spacing between image and name */
+    border-radius: 50%; 
+    margin-right: 10px; 
+    object-fit: cover;
+    
   }
 
   .navLinks {

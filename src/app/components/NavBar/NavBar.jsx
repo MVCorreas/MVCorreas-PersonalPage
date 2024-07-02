@@ -32,8 +32,8 @@ const Navbar = () => {
           <Image 
             src="/Profile.jpeg" 
             alt="profileImage"
-            width={50} 
-            height={50}
+            width={80} 
+            height={80}
             className={styles.profileImage}
           />
           <h1>My name</h1>
