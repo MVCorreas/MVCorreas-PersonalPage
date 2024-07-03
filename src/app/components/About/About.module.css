@@ -3,12 +3,6 @@
   padding-top: 100px;
   height: 80vh;
   overflow: hidden; 
-  opacity: 1;
-  transition: opacity 0.5s ease-out;
-}
-
-.section.fade-out {
-  opacity: 0;
 }
 
 .grid {
@@ -66,6 +60,7 @@
 .section .description {
   font-size: 1.5rem;
   line-height: 1.6;
+  padding: 10px;
 }
 
 @media (min-width: 1024px) {

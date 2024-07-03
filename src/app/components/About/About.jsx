@@ -1,7 +1,15 @@
+"use client"
 import Image from "next/image";
 import styles from "./About.module.css";
+import Button from "../Button/Button";
+import { useRouter } from "next/navigation";
 
 const AboutSection = () => {
+  const router = useRouter(); 
+
+  const handleFindOutMore = () => {
+    router.push('/about'); 
+  };
   return (
     <section className={styles.section} id="about">
       <div className={styles.grid}>
@@ -10,7 +18,8 @@ const AboutSection = () => {
           <h2 className={styles.title}>About Me</h2>
           <p className={styles.description}>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem, accusantium ullam. Deserunt dolores earum libero saepe repellat error iste, tenetur doloribus ab placeat aspernatur, ex amet sit accusamus illum. Nemo.
-            </p>
+          </p>
+          <Button onClick={handleFindOutMore}>FIND OUT MORE</Button>
         </div>
         <div className={styles.imageContainer}>
           <Image 

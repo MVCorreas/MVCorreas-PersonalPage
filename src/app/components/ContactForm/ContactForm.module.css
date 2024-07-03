@@ -1,30 +1,32 @@
 .section {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    margin-top: 96px; /* Equivalent to my-12 */
-    padding-top: 96px; /* Equivalent to py-24 */
-    gap: 16px; /* Equivalent to gap-4 */
+    margin-top: 96px; 
+    padding-top: 300px; 
+    gap: 16px;
+    height: 80vh;
+   
   }
   
   .title {
-    font-size: 2.25rem; /* Equivalent to text-4xl */
-    font-weight: bold; /* Equivalent to font-bold */
+    font-size: 2.25rem; 
+    font-weight: bold;
     background-clip: text;
     background-image: linear-gradient(to right, #a8dadc, #457b9d, #1d3557);
-    -webkit-background-clip: text; /* For Safari */
-    -webkit-text-fill-color: transparent; /* For Safari */
-    margin-bottom: 16px; /* Equivalent to mb-4 */
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    margin-bottom: 16px;
   }
   
   .paragraph {
-    color: #000; /* Equivalent to text-black */
-    margin-bottom: 16px; /* Equivalent to mb-4 */
-    max-width: 28rem; /* Equivalent to max-w-md */
+    color: #000; 
+    margin-bottom: 16px;
+    max-width: 28rem;
   }
   
   .socials {
     display: flex;
     flex-direction: row;
-    gap: 8px; /* Equivalent to gap-2 */
+    gap: 8px;
   }
   
   .socials a {
@@ -34,8 +36,8 @@
   }
   
   .socials a img {
-    width: 60px; /* Equivalent to width-60 */
-    height: 60px; /* Equivalent to height-60 */
+    width: 60px; 
+    height: 60px;
   }
   
   .formContainer {
@@ -44,46 +46,46 @@
   }
   
   .formContainer label {
-    color: #000; /* Equivalent to text-black */
-    margin-bottom: 8px; /* Equivalent to mb-2 */
-    font-size: 0.875rem; /* Equivalent to text-sm */
-    font-weight: medium; /* Equivalent to font-medium */
+    color: #000; 
+    margin-bottom: 8px; 
+    font-size: 0.875rem; 
+    font-weight: medium;
   }
   
   .formContainer input,
   .formContainer textarea {
-    background-color: #18191e; /* Equivalent to bg-[#18191E] */
-    border: 1px solid #33353f; /* Equivalent to border border-[#33353F] */
-    color: #9ca2a9; /* Equivalent to placeholder-[#9CA2A9] */
-    border-radius: 0.375rem; /* Equivalent to rounded-lg */
-    padding: 10px 15px; /* Equivalent to p-2.5 */
-    margin-bottom: 16px; /* Equivalent to mb-6 */
-    width: 100%; /* Equivalent to w-full */
+    background-color: #18191e; 
+    border: 1px solid #33353f;
+    color: #9ca2a9; 
+    border-radius: 0.375rem; 
+    padding: 10px 15px; 
+    margin-bottom: 16px; 
+    width: 100%; 
   }
   
   .formContainer textarea {
-    resize: vertical; /* For textarea auto resizing */
+    resize: vertical; 
   }
   
   .formContainer button {
     background-image: linear-gradient(to right, #a8dadc, #457b9d, #1d3557);
-    color: #fff; /* Equivalent to text-white */
-    font-weight: medium; /* Equivalent to font-medium */
+    color: #fff; 
+    font-weight: medium; 
     border: none;
-    border-radius: 0.375rem; /* Equivalent to rounded-lg */
-    padding: 10px 25px; /* Equivalent to py-2.5 px-5 */
+    border-radius: 0.375rem; 
+    padding: 10px 25px; 
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
   }
   
   .formContainer button:hover {
-    background-color: #fcd34d; /* Equivalent to hover:bg-yellow-300 */
-    color: #000; /* Equivalent to hover:text-black */
+    background-color: #fcd34d; 
+    color: #000;
   }
   
   .successMessage {
-    color: #10b981; /* Equivalent to text-green-500 */
-    font-size: 0.875rem; /* Equivalent to text-sm */
-    margin-top: 8px; /* Equivalent to mt-2 */
+    color: #10b981; 
+    font-size: 0.875rem; 
+    margin-top: 8px;
   }
   

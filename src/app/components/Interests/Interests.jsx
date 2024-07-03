@@ -1,6 +1,9 @@
+"use client"
 import React from 'react';
 import InterestCard from '../InterestCard/InterestCard';
-import styles from './Interests.module.css'; 
+import styles from './Interests.module.css';
+import { useRouter } from 'next/navigation'; 
+import Button from '../Button/Button';
 
 const interests = [
   {
@@ -30,6 +33,12 @@ const interests = [
 ];
 
 const InterestsSection = () => {
+  const router = useRouter(); 
+
+  const handleFindOutMore = () => {
+    router.push('/interests'); 
+  };
+
   return (
     <section className={styles.section} id='interests'>
       <div className={styles.titleContainer}>
@@ -45,6 +54,9 @@ const InterestsSection = () => {
             description={interest.description}
           />
         ))}
+      </div>
+      <div>
+        <Button onClick={handleFindOutMore}>FIND OUT MORE</Button>
       </div>
     </section>
   );
