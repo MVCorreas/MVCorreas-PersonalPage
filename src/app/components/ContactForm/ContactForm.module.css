@@ -1,9 +1,8 @@
 .section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 4rem 2rem; 
-  overflow: auto;
+  color: #374151; 
+  height: 80vh;
+  padding-top: 40px;
+  margin-bottom: 4rem;
 }
 
 .grid {
@@ -76,17 +75,3 @@
   margin-top: 0.25rem;
 }
 
-.submitButton {
-  background-color: #6b7280;
-  color: #fff;
-  border: none;
-  padding: 1rem 2rem;
-  font-size: 1rem;
-  border-radius: 0.5rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.submitButton:hover {
-  background-color: #4b5563;
-}

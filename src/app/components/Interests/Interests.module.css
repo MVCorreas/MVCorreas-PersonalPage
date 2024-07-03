@@ -2,7 +2,8 @@
     color: #374151; 
     height: 80vh;
     padding-top: 40px;
-    overflow: auto;
+    overflow: visible;
+    margin-bottom: 400px;
   }
 
   .titleContainer {
