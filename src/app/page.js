@@ -4,11 +4,13 @@ import NavBar from "./components/NavBar/NavBar";
 import AboutSection from "./components/About/About";
 import Interests from "./components/Interests/Interests";
 import ContactForm from "./components/ContactForm/ContactForm";
+import HeroSection from "./components/HeroSection/HeroSection";
 
 export default function Home() {
   return (
     <main>
       <NavBar />
+      <HeroSection />
       <AboutSection />
       <Interests />
       <ContactForm />

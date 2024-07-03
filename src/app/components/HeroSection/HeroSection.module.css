@@ -1,0 +1,33 @@
+.section {
+    color: #374151; /* Equivalent to text-slate-900 */
+    height: 80vh;
+    position: relative; /* Needed for positioning the pseudo-element */
+    box-sizing: border-box;
+    overflow-y: scroll;
+    display: flex; /* Enable flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+  }
+  
+  .section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('/Profile.jpeg');
+    opacity: 0.5;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: -1; /* Place the pseudo-element behind the content */
+  }
+  
+  .title {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+  }
+  

@@ -1,5 +1,6 @@
 .section {
-    color: #374151; /* Equivalent to text-slate-900 */
+    color: #374151;
+    height: 80vh;
   }
   
   .grid {

@@ -3,6 +3,7 @@
 import Image from 'next/image'
 import Link from 'next/link';
 import { useState } from 'react';
+import styles from './ContactForm.module.css'
 
 const ContactForm = () => {
   const [subject, setSubject] = useState('');
