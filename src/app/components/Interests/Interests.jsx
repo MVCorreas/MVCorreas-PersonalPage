@@ -1,30 +1,49 @@
-import Image from "next/image";
-import styles from "./Interests.module.css";
+import React from 'react';
+import InterestCard from '../InterestCard/InterestCard';
+import styles from './Interests.module.css'; 
 
-const Interests = () => {
+const interests = [
+  {
+    id: 1,
+    title: 'Programming',
+    description: 'Lorem ipsum',
+    image: '/AboutImage.jpg'
+  },
+  {
+    id: 2,
+    title: 'Family',
+    description: 'Lorem ipsum',
+    image: '/AboutImage.jpg'
+  },
+  {
+    id: 3,
+    title: 'Learning',
+    description: 'Lorem ipsum',
+    image: '/AboutImage.jpg'
+  },
+  {
+    id: 4,
+    title: 'Nature',
+    description: 'Lorem ipsum',
+    image: '/AboutImage.jpg'
+  }
+];
+
+const InterestsSection = () => {
   return (
-    <section className={styles.section} id="interests">
+    <section className={styles.section}>
       <div className={styles.grid}>
-      <div className={styles.imageContainer}>
-          <Image 
-            src="/Profile.jpeg" 
-            alt="aboutImage"
-            width={500} 
-            height={500}
-            className={styles.profileImage}
+        {interests.map((interest) => (
+          <InterestCard
+            key={interest.id}
+            imgUrl={interest.image}
+            title={interest.title}
+            description={interest.description}
           />
-        </div>
-        <div className={styles.textContainer}>
-          <h2 className={styles.title}>Interests</h2>
-          <p className={styles.description}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem est nisi esse voluptates ad deleniti odit animi cumque? Debitis provident non itaque minus earum voluptatibus, accusamus iure enim soluta minima?
-          </p>
-        </div>
-       
+        ))}
       </div>
-      
     </section>
   );
 };
 
-export default Interests;
+export default InterestsSection;
