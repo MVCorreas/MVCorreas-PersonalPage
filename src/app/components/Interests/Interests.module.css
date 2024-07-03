@@ -1,6 +1,7 @@
 .section {
     color: #374151; 
     height: 80vh;
+    padding-top: 40px;
   }
   
   .grid {

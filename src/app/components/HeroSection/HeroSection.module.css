@@ -1,12 +1,12 @@
 .section {
-    color: #374151; /* Equivalent to text-slate-900 */
-    height: 80vh;
-    position: relative; /* Needed for positioning the pseudo-element */
-    box-sizing: border-box;
-    overflow-y: scroll;
-    display: flex; /* Enable flexbox */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
+  padding-top: 40px; /* Adjust this value according to the height of your fixed navbar */
+  color: #374151; /* Equivalent to text-slate-900 */
+  height: 80vh;
+  box-sizing: border-box;
+  overflow-y: scroll;
+  display: flex; /* Enable flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; 
   }
   
   .section::before {
@@ -15,8 +15,8 @@
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
-    background-image: url('/Profile.jpeg');
+    bottom: 50px;
+    background-image: url('/BackgroundImage.jpg');
     opacity: 0.5;
     background-size: cover;
     background-position: center center;

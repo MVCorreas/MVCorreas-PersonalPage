@@ -1,9 +1,10 @@
 "use client"
 import Link from 'next/link';
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from './NavBar.module.css'; 
 import Image from 'next/image'
 import { usePathname } from 'next/navigation';
+import MenuOverlay from '../MenuOverlay/MenuOverlay'
 
 
 const navLinks = [
@@ -22,11 +23,16 @@ const navLinks = [
 ];
 
 const Navbar = () => {
+  const [navbarOpen, setNavbarOpen] = useState(false);
   const pathname = usePathname();
 
-  useEffect(() => {
-    console.log('Current pathname:', pathname);
-  }, [pathname]);
+  // useEffect(() => {
+  //   console.log('Current pathname:', pathname);
+  // }, [pathname]);
+
+  const toggleNavbar = () => {
+    setNavbarOpen(!navbarOpen);
+  };
 
   
 
@@ -42,11 +48,18 @@ const Navbar = () => {
           />
           <h1>My name</h1>
         </div>
+
+        {navbarOpen && (
+        <div className={styles.overlay}>
+          <MenuOverlay links={navLinks} />
+        </div>
+      )}
+
         {pathname === '/' ? (
         <div className={styles.navLinks}>
           {navLinks.map((link, index) => (
              <h3 key={index} className={styles['nav-link']}>
-               <Link href={link.path}>{link.title}</Link>
+               <Link href={link.path} onClick={toggleNavbar}>{link.title}</Link>
              </h3>
           ))}
         </div>
@@ -55,6 +68,7 @@ const Navbar = () => {
           <p>links to social</p>
         </div>
       )}
+       
     </nav>
   );
 };
