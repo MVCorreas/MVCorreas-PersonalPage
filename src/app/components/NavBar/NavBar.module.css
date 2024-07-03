@@ -6,6 +6,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
   }
 
   .profile {
@@ -24,6 +27,8 @@
     display: flex;
     gap: 1rem;
     margin-right: 50px;
+  ;
+   
   }
   
   .nav-link {

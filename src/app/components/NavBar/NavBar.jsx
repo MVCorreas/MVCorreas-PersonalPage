@@ -1,8 +1,10 @@
 "use client"
 import Link from 'next/link';
-import React, { useState } from 'react';
+import React, { useEffect } from 'react';
 import styles from './NavBar.module.css'; 
 import Image from 'next/image'
+import { usePathname } from 'next/navigation';
+
 
 const navLinks = [
   {
@@ -20,11 +22,13 @@ const navLinks = [
 ];
 
 const Navbar = () => {
-  const [navbarOpen, setNavbarOpen] = useState(false);
+  const pathname = usePathname();
 
-  const toggleNavbar = () => {
-    setNavbarOpen(!navbarOpen);
-  };
+  useEffect(() => {
+    console.log('Current pathname:', pathname);
+  }, [pathname]);
+
+  
 
   return (
     <nav className={styles.navbar}>
@@ -38,15 +42,19 @@ const Navbar = () => {
           />
           <h1>My name</h1>
         </div>
-
-      <div className={styles.navLinks}>
-        {navLinks.map((link, index) => (
-          <h3 key={index} className={styles['nav-link']}>
-            <Link href={link.path}>{link.title}</Link>
-          </h3>
-        ))}
-      </div>
-     
+        {pathname === '/' ? (
+        <div className={styles.navLinks}>
+          {navLinks.map((link, index) => (
+             <h3 key={index} className={styles['nav-link']}>
+               <Link href={link.path}>{link.title}</Link>
+             </h3>
+          ))}
+        </div>
+      ) : (
+        <div>
+          <p>links to social</p>
+        </div>
+      )}
     </nav>
   );
 };
