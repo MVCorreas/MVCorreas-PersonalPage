@@ -46,7 +46,7 @@ const Navbar = () => {
             height={80}
             className={styles.profileImage}
           />
-          <h1>My name</h1>
+          <h1 className={styles.menuTitle}>María Victoria Correas</h1>
         </div>
 
         {navbarOpen && (

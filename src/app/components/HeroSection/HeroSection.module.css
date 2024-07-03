@@ -1,11 +1,11 @@
 .section {
-  padding-top: 40px; /* Adjust this value according to the height of your fixed navbar */
-  color: #374151; /* Equivalent to text-slate-900 */
+  padding-top: 40px; 
+  color: #374151; 
   height: 80vh;
   box-sizing: border-box;
   overflow-y: scroll;
-  display: flex; /* Enable flexbox */
-  justify-content: center; /* Center horizontally */
+  display: flex; 
+  justify-content: center; 
   align-items: center; 
   }
   
@@ -22,12 +22,15 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    z-index: -1; /* Place the pseudo-element behind the content */
+    z-index: -1; 
   }
   
-  .title {
+  .heroTitle {
     position: relative;
     z-index: 1;
     text-align: center;
+    font-size: 3rem;
+    font-weight: 300;
+    
   }
   

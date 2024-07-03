@@ -14,7 +14,7 @@ const AboutSection = () => {
         </div>
         <div className={styles.imageContainer}>
           <Image 
-            src="/Profile.jpeg" 
+            src="/AboutImage.jpg" 
             alt="aboutImage"
             width={500} 
             height={500}
