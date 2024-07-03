@@ -4,7 +4,6 @@ import React, { useEffect, useState } from 'react';
 import styles from './NavBar.module.css'; 
 import Image from 'next/image'
 import { usePathname } from 'next/navigation';
-import MenuOverlay from '../MenuOverlay/MenuOverlay'
 
 
 const navLinks = [
@@ -39,21 +38,19 @@ const Navbar = () => {
   return (
     <nav className={styles.navbar}>
       <div className={styles.profile}>
-          <Image 
-            src="/Profile.jpeg" 
-            alt="profileImage"
-            width={80} 
-            height={80}
-            className={styles.profileImage}
-          />
+      <Link href="/">
+     
+        <Image 
+          src="/Profile.jpeg" 
+          alt="profileImage"
+          width={80} 
+          height={80}
+          className={styles.profileImage}
+        />
+      
+    </Link>
           <h1 className={styles.menuTitle}>María Victoria Correas</h1>
         </div>
-
-        {navbarOpen && (
-        <div className={styles.overlay}>
-          <MenuOverlay links={navLinks} />
-        </div>
-      )}
 
         {pathname === '/' ? (
         <div className={styles.navLinks}>

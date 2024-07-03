@@ -31,7 +31,11 @@ const interests = [
 
 const InterestsSection = () => {
   return (
-    <section className={styles.section}>
+    <section className={styles.section} id='interests'>
+      <div className={styles.titleContainer}>
+        <h2 className={styles.interestTitle}>Passions and Hobbies</h2>
+        <p className={styles.interestDescription}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam ducimus impedit aliquid, quaerat, accusantium cumque reprehenderit a, consectetur tempora animi soluta doloremque placeat incidunt atque unde dignissimos mollitia ullam ipsum.</p>
+      </div>
       <div className={styles.grid}>
         {interests.map((interest) => (
           <InterestCard
