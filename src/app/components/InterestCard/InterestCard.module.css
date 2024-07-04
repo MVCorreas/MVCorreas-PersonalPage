@@ -11,7 +11,16 @@
   width: 90%; 
   border-radius: 10px;
   overflow: hidden;
+  box-shadow: 0px 4px 6px rgba(96, 92, 92, 0.921);
+  transition: transform 0.3s ease, box-shadow 0.5s ease; /* Add transition for smooth animation */
 }
+
+.card:hover {
+  transform: translate(0, -20px); 
+  -webkit-transform: translate(0, -20px);
+  -moz-transform: translate(0, -20px); 
+}
+
 
 .cardImage {
   height: 100%;
