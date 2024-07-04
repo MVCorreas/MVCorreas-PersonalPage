@@ -62,7 +62,7 @@ const Navbar = () => {
         </div>
       ) : (
         <div>
-          <p>links to social</p>
+          <p className={styles.dynamicPageText}>Embrace the extra mile</p>
         </div>
       )}
        
