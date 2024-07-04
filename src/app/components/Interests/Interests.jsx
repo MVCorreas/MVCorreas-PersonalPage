@@ -10,7 +10,7 @@ const interests = [
     id: 1,
     title: 'Programming',
     description: 'My passion for web development exceeds boundaries. From the moment I crossed paths with web development, I have striven to transmit meaning and passion through every pixel and every byte.',
-    image: '/AboutImage.jpg'
+    image: '/Programming.jpg'
   },
   {
     id: 2,

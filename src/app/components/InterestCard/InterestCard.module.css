@@ -30,7 +30,8 @@
 }
 
 .content {
-  background-color: #eda7c4;
+  background-color: white;
+  color: #b3074f;
   padding: 1.5rem; 
 }
 
@@ -41,5 +42,5 @@
 }
 
 .description {
-  color: white;
+  color: black;
 }

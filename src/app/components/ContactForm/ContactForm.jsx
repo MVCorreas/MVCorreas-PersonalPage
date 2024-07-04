@@ -56,8 +56,8 @@ const ContactForm = () => {
       <div className={styles.grid}>
         <div className={styles.imageContainer}>
           <Image 
-            src="/AboutImage.jpg" 
-            alt="aboutImage"
+            src="/Telephone.jpg" 
+            alt="contactImage"
             width={500} 
             height={500}
             className={styles.contactImage}

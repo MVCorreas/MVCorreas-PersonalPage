@@ -17,13 +17,13 @@ const AboutSection = () => {
         <div className={styles.textContainer}>
           <h2 className={styles.title}>About Me</h2>
           <p className={styles.description}>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem, accusantium ullam. Deserunt dolores earum libero saepe repellat error iste, tenetur doloribus ab placeat aspernatur, ex amet sit accusamus illum. Nemo.
+          Hi there! And welcome to my little abode. I am a Full Stack developer from Mendoza, Argentina. Exactly! One of the Great Wine Capitals. Not that I love wine, which I don’t; but it is a historical icon of my land, and I am a fervent lover of tradition and cultural inheritance. And so, let me tell you more about me, and the story about my path towards web development.
           </p>
           <Button onClick={handleFindOutMore}>FIND OUT MORE</Button>
         </div>
         <div className={styles.imageContainer}>
           <Image 
-            src="/AboutImage.jpg" 
+            src="/About.jpg" 
             alt="aboutImage"
             width={500} 
             height={500}
