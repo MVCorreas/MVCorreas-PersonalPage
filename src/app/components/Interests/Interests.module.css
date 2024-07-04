@@ -6,8 +6,8 @@
     padding-top: 40px;
     overflow: visible;
     margin-bottom: 20px;
-    background-color: #fed7aa50;
-    position: relative; /* Ensure proper positioning */
+    background-color: #fcefb467;
+    position: relative; 
     z-index: 1;
   }
 
@@ -20,7 +20,7 @@
   .interestTitle {
     font-size: 2.5rem;
     font-weight: 200;
-    color: #fed7aa;
+    color: #b3074f;
     margin-bottom: 1rem;
   }
 

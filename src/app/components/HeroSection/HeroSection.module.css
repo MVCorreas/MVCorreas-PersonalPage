@@ -1,6 +1,6 @@
 .section {
   padding-top: 40px; 
-  color: #374151; 
+  color: #771c42; 
   height: 90vh;
   box-sizing: border-box;
   overflow-y: clip;
@@ -30,7 +30,7 @@
     position: relative;
     z-index: 1;
     text-align: center;
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 300;
     
   }

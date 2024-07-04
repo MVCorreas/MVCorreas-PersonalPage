@@ -8,10 +8,10 @@
 }
 
 .button {
-  background-color: #fed7aa;
+  background-color: #b3074f;
   height: 100px;
   width: 200px;
-  color: #374151;
+  color: white;
   border: none;
   padding: 10px 20px;
   font-size: 1.2rem;
@@ -23,7 +23,7 @@
 }
 
 .button:hover {
-  background-color: #fcbf49;
+  background-color: #e34889;
 }
 
 @media (max-width: 768px) {
