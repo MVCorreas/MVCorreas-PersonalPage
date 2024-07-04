@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import styles from './ContactForm.module.css';
 import Button from '../Button/Button';
+import Modal from '../Modal/Modal';
 
 const ContactForm = () => {
   const [email, setEmail] = useState('');
@@ -140,14 +141,7 @@ const ContactForm = () => {
                 </Button>
               </form>
             ) : (
-              <div className={styles.modalContainer}>
-                <div className={styles.modalContent}>
-                  <p className={styles.modalMessage}>Thank you for contacting me!</p>
-                  <Button className={styles.modalButton} onClick={closeModal}>
-                    CLOSE
-                  </Button>
-                </div>
-              </div>
+              <Modal message="Thank you for contacting me!" onClose={closeModal} />
             )}
           </div>
         </div>
