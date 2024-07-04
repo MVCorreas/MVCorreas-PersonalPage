@@ -1,24 +1,23 @@
 .section {
-  color: #374151; 
-    display: flex;
-    flex-direction: column;
+  color: #374151;
+  display: flex;
+  flex-direction: column;
 
-    max-height: fit-content;
-    padding-top: 40px;
-    overflow: visible;
-    margin-bottom: 40px;
-    position: relative; /* Ensure proper positioning */
-    z-index: 1;
+  max-height: fit-content;
+  padding-top: 40px;
+  overflow: visible;
+  margin-bottom: 40px;
+  position: relative;
+  z-index: 1;
 }
 
 .grid {
   display: grid;
-  grid-template-columns: 1fr 1fr; 
+  grid-template-columns: 1fr 1fr;
   gap: 2rem;
   align-items: center;
   padding: 2rem;
 }
-
 
 .imageContainer {
   width: 100%;
@@ -42,7 +41,7 @@
 .title {
   font-size: 2.5rem;
   font-weight: 200;
-  color: #fed7aa;
+  color: #b3074f;
   margin-bottom: 1rem;
 }
 
@@ -54,8 +53,10 @@
 
 .formContainer {
   width: 100%;
-  padding: 0 2rem; 
+  padding: 2rem;
   margin-top: 50px;
+  background-color: #fae588;
+  border-radius: 5px;
 }
 
 .formGroup {
@@ -72,7 +73,7 @@
 }
 
 .inputError {
-  border-color: #dc2626; 
+  border-color: #dc2626;
 }
 
 .errorText {
@@ -80,4 +81,3 @@
   font-size: 0.875rem;
   margin-top: 0.25rem;
 }
-
