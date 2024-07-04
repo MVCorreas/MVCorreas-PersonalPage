@@ -1,7 +1,6 @@
 "use client"
+import React, { useState } from 'react';
 import Image from 'next/image';
-import { useState } from 'react';
-import { useRouter } from 'next/navigation';
 import styles from './ContactForm.module.css';
 import Button from '../Button/Button';
 
@@ -13,7 +12,6 @@ const ContactForm = () => {
   const [subjectError, setSubjectError] = useState('');
   const [messageError, setMessageError] = useState('');
   const [emailError, setEmailError] = useState('');
-
 
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -44,6 +42,14 @@ const ContactForm = () => {
     setShowThanksMessage(true);
   };
 
+  const closeModal = () => {
+    setShowThanksMessage(false);
+    // Optionally, reset form fields here if needed
+    setEmail('');
+    setSubject('');
+    setMessage('');
+  };
+
   return (
     <section id="contact" className={styles.section}>
       <div className={styles.grid}>
@@ -63,73 +69,74 @@ const ContactForm = () => {
             I'll get back to you asap.
           </p>
           <div className={styles.formContainer}>
-          {!showThanksMessage ? (
-            <form onSubmit={handleSubmit}>
-              <div className={styles.formGroup}>
-                <label htmlFor="email">Your email</label>
-                <input
-                  name="email"
-                  type="email"
-                  id="email"
-                  required
-                  className={`${styles.inputField} ${emailError ? styles.inputError : ''}`}
-                  placeholder="email@google.com"
-                  value={email}
-                  onChange={(e) => {
-                    setEmail(e.target.value);
-                  }}
-                />
-                {emailError && <p className={styles.errorText}>{emailError}</p>}
+            {!showThanksMessage ? (
+              <form onSubmit={handleSubmit}>
+                <div className={styles.formGroup}>
+                  <label htmlFor="email">Your email</label>
+                  <input
+                    name="email"
+                    type="email"
+                    id="email"
+                    required
+                    className={`${styles.inputField} ${emailError ? styles.inputError : ''}`}
+                    placeholder="email@google.com"
+                    value={email}
+                    onChange={(e) => {
+                      setEmail(e.target.value);
+                    }}
+                  />
+                  {emailError && <p className={styles.errorText}>{emailError}</p>}
+                </div>
+                <div className={styles.formGroup}>
+                  <label htmlFor="subject">Subject</label>
+                  <input
+                    name="subject"
+                    type="text"
+                    id="subject"
+                    required
+                    className={`${styles.inputField} ${subjectError ? styles.inputError : ''}`}
+                    placeholder="Just saying hi"
+                    value={subject}
+                    onChange={(e) => {
+                      setSubject(e.target.value);
+                    }}
+                  />
+                  {subjectError && <p className={styles.errorText}>{subjectError}</p>}
+                </div>
+                <div className={styles.formGroup}>
+                  <label htmlFor="message">Message</label>
+                  <textarea
+                    name="message"
+                    id="message"
+                    required
+                    className={`${styles.inputField} ${messageError ? styles.inputError : ''}`}
+                    placeholder="Let's talk about..."
+                    value={message}
+                    onChange={(e) => {
+                      setMessage(e.target.value);
+                    }}
+                  />
+                  {messageError && <p className={styles.errorText}>{messageError}</p>}
+                </div>
+                <Button 
+                  type="submit" 
+                  className={styles.submitButton}
+                >
+                  Send Message
+                </Button>
+              </form>
+            ) : (
+              <div className={styles.modalContainer}>
+                <div className={styles.modalContent}>
+                  <p className={styles.modalMessage}>Thank you for contacting me!</p>
+                  <Button className={styles.modalButton} onClick={closeModal}>
+                    Close
+                  </Button>
+                </div>
               </div>
-              <div className={styles.formGroup}>
-                <label htmlFor="subject">Subject</label>
-                <input
-                  name="subject"
-                  type="text"
-                  id="subject"
-                  required
-                  className={`${styles.inputField} ${subjectError ? styles.inputError : ''}`}
-                  placeholder="Just saying hi"
-                  value={subject}
-                  onChange={(e) => {
-                    setSubject(e.target.value);
-                  }}
-                />
-                {subjectError && <p className={styles.errorText}>{subjectError}</p>}
-              </div>
-              <div className={styles.formGroup}>
-                <label htmlFor="message">Message</label>
-                <textarea
-                  name="message"
-                  id="message"
-                  required
-                  className={`${styles.inputField} ${messageError ? styles.inputError : ''}`}
-                  placeholder="Let's talk about..."
-                  value={message}
-                  onChange={(e) => {
-                    setMessage(e.target.value);
-                  }}
-                />
-                {messageError && <p className={styles.errorText}>{messageError}</p>}
-              </div>
-              <Button 
-              type="submit" 
-              className={styles.submitButton}
-      
-              >
-                Send Message
-              </Button>
-            </form>
-          ) : (
-            <div className="text-center">
-              <p className="text-green-500 text-sm mt-2">
-                Thank you for contacting me!
-              </p>
-            </div>
-          )}
+            )}
+          </div>
         </div>
-        </div>
-        
       </div>
     </section>
   );
