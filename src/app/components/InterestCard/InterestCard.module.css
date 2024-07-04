@@ -1,8 +1,8 @@
 .cardContainer {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  grid-gap: 0.5rem; /* Adjust the gap as needed */
-  padding: 1rem; /* Optional: Add padding around the grid */
+  grid-gap: 0.5rem; 
+  padding: 1rem; 
 }
 
 .card {
@@ -15,12 +15,6 @@
   transition: transform 0.3s ease, box-shadow 0.5s ease; /* Add transition for smooth animation */
 }
 
-.card:hover {
-  transform: translate(0, -20px); 
-  -webkit-transform: translate(0, -20px);
-  -moz-transform: translate(0, -20px); 
-}
-
 
 .cardImage {
   height: 100%;
@@ -28,6 +22,11 @@
   background-size: cover;
   background-position: center;
   position: relative;
+  transition: transform 0.3s ease;
+}
+
+.cardImage:hover {
+  transform: scale(1.05); 
 }
 
 .content {
