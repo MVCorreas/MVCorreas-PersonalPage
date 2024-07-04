@@ -6,7 +6,7 @@
     padding-top: 40px;
     overflow: visible;
     margin-bottom: 20px;
-    background-color: #ffdd55;
+    background-color: #fed7aa50;
     position: relative; /* Ensure proper positioning */
     z-index: 1;
   }
