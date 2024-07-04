@@ -12,7 +12,7 @@ const Footer = () => {
        <Link href="https://github.com/MVCorreas">
             <Image src='/github-icon.svg' alt="Github Icon" width={50} height={50} className={styles.icon}/>
           </Link>
-          <Link href="https://www.linkedin.com/in/mar%C3%ADa-victoria-correas-148049b2/">
+          <Link href="https://www.linkedin.com/in/mar%C3%ADa-victoria-correas-148049b2/"  className={styles.icon}>
             <Image src='/linkedin-icon.svg' alt="Linkedin Icon"  width={50} height={50}/>
           </Link>
        </div>

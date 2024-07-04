@@ -1,35 +1,96 @@
-/* AboutPage.module.css */
-
-.aboutPage {
+.aboutContainer {
     display: flex;
-    padding: 2rem;
+    flex-direction: row;
+}
+
+.aboutSection, .inspirationSection, .socialSection {
+    display: flex;
+    padding-top: 10%;
+    width: 100%;
+    height: 90vh;
   }
-  
+
+
   .imageGrid {
-    flex: 1; /* Take up the entire width of the left column */
+    flex: 1;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr 2f)); /* Adjust columns as needed */
-    grid-auto-rows: 250px; /* Adjust row height as needed */
-    grid-gap: 10px; /* Gap between grid items */
-    height: 100%;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr 1fr));
+    grid-auto-rows: 150px;
+    grid-gap: 10px;
+    height: 90vh;
+    max-width: 70vh; 
   }
   
   .textContainer {
-    flex: 1; /* Take up the entire width of the right column */
-    padding-left: 2rem; /* Add spacing between image grid and text */
+    flex: 1;
+    padding-left: 2rem; 
+   
   }
   
   .image {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensure images cover their grid cells */
+    object-fit: cover; 
   }
   
   .horizontal {
-    grid-column: span 2; /* Span 2 columns for horizontal images */
+    grid-column: span 2; 
   }
   
   .vertical {
-    grid-row: span 2; /* Span 2 rows for vertical images */
+    grid-row: span 2;
   }
+
+  .inspirationSection {
+    color: #374151;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    
+  }
+  
+.inspirationTitle {
+    font-size: 2.5rem;
+    font-weight: 200;
+    color: #fed7aa;
+    margin-bottom: 1rem;
+}
+.inspirationImage {
+    justify-content: center;
+    opacity: 0.5;
+    object-fit: cover;
+}
+
+.inspirationText {
+    text-align: center;
+    position: absolute;
+    z-index: 0;
+    color: black;
+    font-style: italic;
+    font-size: 1.5rem;
+    width: 70%;
+}
+
+.socialSection {
+    min-height: 90vh; /* Ensures it takes at least the same height as the other sections */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers content vertically */
+    align-items: center; /* Centers content horizontally */
+}
+
+.iconContainer {
+    display: flex;
+    gap: 1rem;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+}
   
