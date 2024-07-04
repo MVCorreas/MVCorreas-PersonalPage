@@ -1,12 +1,13 @@
 .section {
   padding-top: 40px; 
   color: #374151; 
-  height: 80vh;
+  height: 90vh;
   box-sizing: border-box;
-  overflow-y: scroll;
+  overflow-y: clip;
   display: flex; 
   justify-content: center; 
   align-items: center; 
+  margin-bottom: 40px;
   }
   
   .section::before {

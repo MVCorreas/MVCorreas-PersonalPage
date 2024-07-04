@@ -1,8 +1,11 @@
 .section {
   color: #374151;
-  padding-top: 100px;
+  padding-top: 30px;
   height: 80vh;
   overflow: hidden; 
+  background-color: white; /* Added fixed white background */
+  position: relative; /* Ensure proper positioning */
+  z-index: 1;
 }
 
 .grid {
@@ -64,6 +67,12 @@
 @media (min-width: 1024px) {
   .description {
     font-size: 1.125rem;
+  }
+}
+
+@media (min-width: 640px) {
+  .description {
+    font-size: 1rem;
   }
 }
 

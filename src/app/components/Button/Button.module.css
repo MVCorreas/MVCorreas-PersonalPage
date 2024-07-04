@@ -3,6 +3,7 @@
     justify-content: center;
     align-items: center;
     height: 100px; 
+    padding: 80px;
   }
   .button {
     background-color: #fed7aa;
@@ -16,6 +17,7 @@
     border-radius: 60px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+
   }
   
   .button:hover {

@@ -1,9 +1,14 @@
 .section {
     color: #374151; 
-    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    max-height: fit-content;
     padding-top: 40px;
     overflow: visible;
-    margin-bottom: 400px;
+    margin-bottom: 20px;
+    background-color: #ffdd55;
+    position: relative; /* Ensure proper positioning */
+    z-index: 1;
   }
 
   .titleContainer {

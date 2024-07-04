@@ -44,7 +44,7 @@ const ContactForm = () => {
 
   const closeModal = () => {
     setShowThanksMessage(false);
-    // Optionally, reset form fields here if needed
+
     setEmail('');
     setSubject('');
     setMessage('');
@@ -71,6 +71,20 @@ const ContactForm = () => {
           <div className={styles.formContainer}>
             {!showThanksMessage ? (
               <form onSubmit={handleSubmit}>
+                <div className={styles.formGroup}>
+                  <label htmlFor="name">Your Name</label>
+                  <input
+                    name="name"
+                    type="name"
+                    id="name"
+                    required
+                    placeholder="Type your name"
+                    className={styles.inputField}
+                    onChange={(e) => {
+                      setEmail(e.target.value);
+                    }}
+                  />
+                </div>
                 <div className={styles.formGroup}>
                   <label htmlFor="email">Your email</label>
                   <input
@@ -122,7 +136,7 @@ const ContactForm = () => {
                   type="submit" 
                   className={styles.submitButton}
                 >
-                  Send Message
+                  SEND MESSAGE
                 </Button>
               </form>
             ) : (
@@ -130,7 +144,7 @@ const ContactForm = () => {
                 <div className={styles.modalContent}>
                   <p className={styles.modalMessage}>Thank you for contacting me!</p>
                   <Button className={styles.modalButton} onClick={closeModal}>
-                    Close
+                    CLOSE
                   </Button>
                 </div>
               </div>
