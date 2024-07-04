@@ -1,3 +1,5 @@
+import AboutContent from "./AboutPage";
+
 export default function AboutPage() {
-  return <h1>About me</h1>;
+  return <AboutContent />;
 }
