@@ -4,6 +4,7 @@ import InterestCard from '../InterestCard/InterestCard';
 import styles from './Interests.module.css';
 import { useRouter } from 'next/navigation'; 
 import Button from '../Button/Button';
+import useEaseIn from '../../hooks/useEaseIn';
 
 const interests = [
   {
@@ -40,13 +41,14 @@ const interests = [
 
 const InterestsSection = () => {
   const router = useRouter(); 
+  const sectionsRef = useEaseIn()
 
   const handleFindOutMore = () => {
     router.push('/interests'); 
   };
 
   return (
-    <section className={styles.section} id='interests'>
+    <section ref={(el) => (sectionsRef.current[1] = el)} className={`hidden ${styles.section}`} id='interests'>
       <div className={styles.titleContainer}>
         <h2 className={styles.interestTitle}>Passions and Hobbies</h2>
         <p className={styles.interestDescription}>I consciously choose to enjoy every bit of my life. Take the time to breath in how joyful my life is. Here are some of my top interests.</p>

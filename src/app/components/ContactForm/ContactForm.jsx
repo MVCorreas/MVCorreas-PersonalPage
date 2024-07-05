@@ -4,6 +4,7 @@ import Image from 'next/image';
 import styles from './ContactForm.module.css';
 import Button from '../Button/Button';
 import Modal from '../Modal/Modal';
+import useEaseIn from '../../hooks/useEaseIn';
 
 const ContactForm = () => {
   const [email, setEmail] = useState('');
@@ -13,6 +14,7 @@ const ContactForm = () => {
   const [subjectError, setSubjectError] = useState('');
   const [messageError, setMessageError] = useState('');
   const [emailError, setEmailError] = useState('');
+  const sectionsRef = useEaseIn()
 
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -52,7 +54,7 @@ const ContactForm = () => {
   };
 
   return (
-    <section id="contact" className={styles.section}>
+    <section ref={(el) => (sectionsRef.current[2] = el)} className={`hidden ${styles.section}`} id="contact">
       <div className={styles.grid}>
         <div className={styles.imageContainer}>
           <Image 

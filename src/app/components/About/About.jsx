@@ -3,15 +3,17 @@ import Image from "next/image";
 import styles from "./About.module.css";
 import Button from "../Button/Button";
 import { useRouter } from "next/navigation";
+import useEaseIn from '../../hooks/useEaseIn';
 
 const AboutSection = () => {
   const router = useRouter();
+  const sectionsRef = useEaseIn()
 
   const handleFindOutMore = () => {
     router.push("/about");
   };
   return (
-    <section className={styles.section} id="about">
+    <section ref={(el) => (sectionsRef.current[0] = el)} className={`hidden ${styles.section}`} id="about">
       <div className={styles.grid}>
         <div className={styles.textContainer}>
           <h2 className={styles.title}>About Me</h2>
