@@ -26,7 +26,7 @@ const AboutContent = () => {
             className={`${styles.image} ${styles.vertical}`}
           />
           <Image
-            src="/AboutImage.jpg"
+            src="/Nature.jpg"
             alt="Image 2"
             width={500}
             height={500}
