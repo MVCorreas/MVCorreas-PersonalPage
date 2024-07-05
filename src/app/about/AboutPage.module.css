@@ -169,6 +169,7 @@
   .textContainer {
     padding-left: 1rem;
     padding-right: 1rem;
+    width: 100%;
     transform: translateY(100%);
     opacity: 0;
     animation: slideUp 1.6s ease-out forwards;
@@ -207,6 +208,70 @@
       opacity: 1;
       transform: translateY(0);
     }
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  .aboutSection,
+  .inspirationSection,
+  .socialSection {
+    flex-direction: column;
+    height: auto;
+    padding-top: 5%;
+  }
+
+  .aboutSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .imageGrid {
+    max-width: 100%;
+    margin-left: 0;
+  }
+
+  .textContainer {
+    padding: 0 1rem;
+    width: 100%;
+    transform: translateY(100%);
+    opacity: 0;
+    animation: slideUp 1.6s ease-out forwards;
+    animation-delay: 0.5s;
+  }
+
+  .aboutTitle {
+    font-size: 2rem;
+    margin-top: 8rem;
+  }
+
+  .textContainer p {
+    font-size: 1rem;
+    padding-top: 20px;
+    margin-bottom: 4rem;
+  }
+
+  .imageGrid {
+    margin-left: 0;
+    max-width: 60vh;
+  }
+
+  .inspirationTitle {
+    font-size: 2rem;
+  }
+
+  .inspirationText {
+    font-size: 1rem;
+    line-height: 2;
+  }
+
+  .socialText {
+    font-size: 1.1rem;
+  }
+
+  .iconContainer {
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 
