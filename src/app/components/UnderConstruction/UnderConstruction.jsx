@@ -20,8 +20,9 @@ const UnderConstruction = () => {
         <Image
           src="/UnderConstruction.gif"
           alt="PageUnderConstruction"
-          width={500}
-          height={500}
+          width={400}
+          height={400}
+          priority
           className={styles.underConstructionImage}
         />
       </div>
