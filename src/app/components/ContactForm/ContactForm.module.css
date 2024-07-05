@@ -26,10 +26,12 @@
 }
 
 .contactImage {
-  width: 100%;
+  width: 80%;
   height: 80vh;
   border-radius: 10px;
   object-fit: cover;
+  margin-left: 30px;
+ 
 }
 
 .content {
