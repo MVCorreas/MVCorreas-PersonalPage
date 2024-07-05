@@ -18,7 +18,6 @@ const HeroSection = () => {
           src="/BackgroundImage.jpg"
           alt="Background image"
           layout="fill"
-          objectFit="cover"
           className={styles.heroImage}
           priority={true} 
           onLoad={handleImageLoad} 
