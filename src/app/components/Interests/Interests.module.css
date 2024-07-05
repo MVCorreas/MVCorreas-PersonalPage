@@ -49,9 +49,9 @@
 
 
 .grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 2rem;
+  display: flex;
+ flex-direction: row;
+  gap: 1rem;
   align-items: center;
   justify-items: center;
   padding: 0;
@@ -60,7 +60,8 @@
 
 @media (min-width: 640px) {
   .grid {
-    padding: 1rem 2rem;
+    padding: 3rem 3rem;
+    flex-direction: column;
   }
 }
 

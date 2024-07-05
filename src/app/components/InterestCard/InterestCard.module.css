@@ -7,7 +7,7 @@
 
 .card {
   position: relative;
-  height: 20rem;
+  height: 25rem;
   width: 90%; 
   border-radius: 10px;
   overflow: hidden;
@@ -39,6 +39,20 @@
   font-size: 1.5rem; 
   font-weight: 600; 
   margin-bottom: 0.5rem;
+}
+
+@media (min-width: 1024px) {
+  .title {
+    font-size: 1.5rem;
+   
+  }
+}
+
+@media (min-width: 640px) {
+  .title {
+    font-size: 1.5rem;
+   
+  }
 }
 
 .description {
