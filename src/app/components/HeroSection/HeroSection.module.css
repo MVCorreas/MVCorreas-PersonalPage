@@ -48,10 +48,13 @@
 
   .heroImageWrapper {
     position: relative; 
+    height: 100vh; 
+  
   }
-
+  
   .heroImage {
     object-fit: cover;
+    object-position: center; 
   }
 
   .loader {
