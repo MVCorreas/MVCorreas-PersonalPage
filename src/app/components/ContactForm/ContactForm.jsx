@@ -10,10 +10,11 @@ const ContactForm = () => {
   const [email, setEmail] = useState('');
   const [subject, setSubject] = useState('');
   const [message, setMessage] = useState('');
-  const [showThanksMessage, setShowThanksMessage] = useState(false);
+  const [emailError, setEmailError] = useState('');
   const [subjectError, setSubjectError] = useState('');
   const [messageError, setMessageError] = useState('');
-  const [emailError, setEmailError] = useState('');
+  const [showThanksMessage, setShowThanksMessage] = useState(false);
+ 
   const sectionsRef = useEaseIn()
 
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -69,14 +70,13 @@ const ContactForm = () => {
         <div className={styles.content}>
           <h5 className={styles.title}>Let's Connect</h5>
           <p className={styles.description}>
-            I'm currently looking for new opportunities. You can contact me for further information.
-            I'll get back to you asap.
+            I would love to hear your story! You can contact me and I'll get back to you asap.
           </p>
           <div className={styles.formContainer}>
             {!showThanksMessage ? (
               <form onSubmit={handleSubmit}>
                 <div className={styles.formGroup}>
-                  <label htmlFor="name">Your Name</label>
+                  <label htmlFor="name" className={styles.formLabel}>Your Name</label>
                   <input
                     name="name"
                     type="name"
@@ -90,7 +90,7 @@ const ContactForm = () => {
                   />
                 </div>
                 <div className={styles.formGroup}>
-                  <label htmlFor="email">Your email</label>
+                  <label htmlFor="email" className={styles.formLabel}>Your email</label>
                   <input
                     name="email"
                     type="email"
@@ -106,7 +106,7 @@ const ContactForm = () => {
                   {emailError && <p className={styles.errorText}>{emailError}</p>}
                 </div>
                 <div className={styles.formGroup}>
-                  <label htmlFor="subject">Subject</label>
+                  <label htmlFor="subject" className={styles.formLabel}>Subject</label>
                   <input
                     name="subject"
                     type="text"
@@ -122,7 +122,7 @@ const ContactForm = () => {
                   {subjectError && <p className={styles.errorText}>{subjectError}</p>}
                 </div>
                 <div className={styles.formGroup}>
-                  <label htmlFor="message">Message</label>
+                  <label htmlFor="message" className={styles.formLabel}>Message</label>
                   <textarea
                     name="message"
                     id="message"
