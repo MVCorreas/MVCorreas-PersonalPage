@@ -27,8 +27,14 @@ const interests = [
   {
     id: 4,
     title: 'Nature',
-    description: 'I deeply love to pause my hectic life for a minute, and observe. I find peace and harmony in the warmth of the day, watch the leaves musically dance to the wind, and allow myself to drift into silence.  ',
+    description: 'I take pleasure in pausing my hectic life for a minute, and observe. I find peace and harmony in the warmth of the day, watch the leaves musically dance to the wind, and allow myself to drift into silence.  ',
     image: '/Nature.jpg'
+  },
+  {
+    id: 5,
+    title: 'Exercise',
+    description: 'I firmly believe that true health requires careful attention to the mind, body, and soul. Every day, I engage in a workout routine that helps me maintain balance and oxygenate my mind. Hence, persevering perfect harmony and bliss.',
+    image: '/Exercise.jpeg'
   }
 ];
 

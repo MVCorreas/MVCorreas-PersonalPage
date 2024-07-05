@@ -1,5 +1,5 @@
 .section {
-  color: #374151; 
+  color: #374151;
   display: flex;
   flex-direction: column;
   max-height: fit-content;
@@ -7,7 +7,7 @@
   overflow: visible;
   margin-bottom: 20px;
   background-color: #fcefb467;
-  position: relative; 
+  position: relative;
   z-index: 1;
 }
 
@@ -30,12 +30,11 @@
   }
 }
 
-
 .section .interestDescription {
   font-size: 1.5rem;
   line-height: 1.6;
   margin-bottom: 20px;
-  max-width: 800px; 
+  max-width: 800px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -47,27 +46,30 @@
   }
 }
 
-
 .grid {
   display: flex;
- flex-direction: row;
+  flex-wrap: wrap;
   gap: 1rem;
-  align-items: center;
-  justify-items: center;
+  justify-content: center;
   padding: 0;
   margin-bottom: 20px;
 }
 
-@media (min-width: 640px) {
+@media (max-width: 1024px) {
   .grid {
-    padding: 3rem 3rem;
     flex-direction: column;
+    align-items: center;
   }
 }
 
 @media (min-width: 1024px) {
   .grid {
-    gap: 4rem;
-    padding: 4rem;
+    gap: 2rem;
+   
+  }
+
+  .grid > * {
+    flex: 1 1 25%; 
+    max-width: 25%; 
   }
 }
