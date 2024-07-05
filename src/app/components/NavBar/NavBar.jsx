@@ -25,10 +25,6 @@ const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
   const pathname = usePathname();
 
-  // useEffect(() => {
-  //   console.log('Current pathname:', pathname);
-  // }, [pathname]);
-
   const toggleNavbar = () => {
     setNavbarOpen(!navbarOpen);
   };

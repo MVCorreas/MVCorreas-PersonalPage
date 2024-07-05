@@ -1,5 +1,5 @@
-import React from 'react';
-import styles from './InterestCard.module.css';
+import React from "react";
+import styles from "./InterestCard.module.css";
 
 const InterestCard = ({ imgUrl, title, description }) => {
   return (
@@ -9,11 +9,10 @@ const InterestCard = ({ imgUrl, title, description }) => {
         style={{ backgroundImage: `url(${imgUrl})` }}
       >
         <div className={styles.content}>
-        <h5 className={styles.title}>{title}</h5>
-        <p className={styles.description}>{description}</p>
+          <h5 className={styles.title}>{title}</h5>
+          <p className={styles.description}>{description}</p>
+        </div>
       </div>
-      </div>
-      
     </div>
   );
 };

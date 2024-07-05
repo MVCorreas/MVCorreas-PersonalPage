@@ -84,6 +84,10 @@ body {
   scroll-behavior: smooth;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   color: rgb(var(--foreground-rgb));
