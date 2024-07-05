@@ -19,7 +19,7 @@ const UnderConstruction = () => {
       <div className={styles.imageWrapper}>
         <Image
           src="/UnderConstruction.gif"
-          alt="My GIF"
+          alt="PageUnderConstruction"
           width={500}
           height={500}
           className={styles.underConstructionImage}

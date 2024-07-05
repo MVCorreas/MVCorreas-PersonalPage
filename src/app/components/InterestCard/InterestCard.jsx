@@ -7,11 +7,10 @@ const InterestCard = ({ imgUrl, title, description }) => {
       <div
         className={styles.cardImage}
         style={{ backgroundImage: `url(${imgUrl})` }}
-      >
-        <div className={styles.content}>
-          <h5 className={styles.title}>{title}</h5>
-          <p className={styles.description}>{description}</p>
-        </div>
+      ></div>
+      <div className={styles.content}>
+        <h5 className={styles.title}>{title}</h5>
+        <p className={styles.description}>{description}</p>
       </div>
     </div>
   );
