@@ -14,6 +14,7 @@ const AboutContent = () => {
   const handleGoBack = () => {
     router.push("/");
   };
+  
   return (
     <>
       <div className={styles.aboutSection}>

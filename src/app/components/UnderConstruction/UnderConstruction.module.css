@@ -1,0 +1,23 @@
+.underConstructionContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #fcefb467;
+}
+
+.imageWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+
+.underConstructionTitle {
+    font-size: 2.5rem;
+    font-weight: 200;
+    color: #b3074f;
+    margin-bottom: 2rem;
+ 
+}
