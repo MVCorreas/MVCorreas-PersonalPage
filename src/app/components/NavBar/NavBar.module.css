@@ -1,92 +1,108 @@
-
 .navbar {
   background-color: #b3074f57;
-    color: #b3074f;
-    padding: 1rem;
+  color: #b3074f;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  opacity: 0.8;
+  z-index: 1000;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.profileImage {
+  border-radius: 50%;
+  margin-right: 10px;
+  object-fit: cover;
+}
+
+.menuTitle {
+  font-size: 1.5rem;
+  font-weight: 100;
+  margin-left: 10px;
+}
+
+.navLinks {
+  display: flex;
+  gap: 1rem;
+  margin-right: 50px;
+  position: relative;
+}
+
+.nav-link {
+  font-size: 1.5rem;
+  font-weight: lighter;
+  cursor: pointer;
+  position: relative;
+}
+
+.nav-link:before {
+  display: block;
+  content: "";
+  padding-top: 30px;
+  border-bottom: 2px solid white;
+  transform: scaleX(0);
+  transform-origin: left center;
+  bottom: -10px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-link:hover:before {
+  transform: scaleX(1);
+  color: white;
+}
+
+.nav-link:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.dynamicPageText {
+  margin-right: 40px;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
+    flex-direction: column;
+    gap: 0.5rem;
+    position: absolute;
+    top: 4rem;
+    left: 0;
     width: 100%;
-    top: 0;
-    opacity: 0.8;
+    background-color: #333;
+    padding: 1rem;
     z-index: 1000;
-    
   }
 
-  .profile {
-    display: flex;
-    align-items: center;
-    margin-left: 20px;
-  }
-  
-  .profileImage {
-    border-radius: 50%; 
-    margin-right: 10px; 
-    object-fit: cover;
-    
-  }
-
-  .menuTitle {
-    font-size: 1.5rem;
-    font-weight: 100;
-    margin-left: 10px;
-  }
-
-  .navLinks {
-    display: flex;
-    gap: 1rem;
-    margin-right: 50px;
-   
-  }
-  
   .nav-link {
     font-size: 1.2rem;
-    font-weight: bold;
-    cursor: pointer;
   }
-  
-  .nav-link:hover {
-    text-decoration: none;
-    color: white;
-  }
+}
 
+.dynamicPageText {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 640px) {
   .dynamicPageText {
-    margin-right: 40px;
+    font-size: 1rem;
   }
-  
-  @media (max-width: 768px) {
-    .nav-links {
-      display: flex;
-      flex-direction: column;
-      gap: 0.5rem;
-      position: absolute;
-      top: 4rem;
-      left: 0;
-      width: 100%;
-      background-color: #333;
-      padding: 1rem;
-      z-index: 1000;
-    }
-  
-    .nav-link {
-      font-size: 1.2rem;
-    }
-  }
+}
 
+@media (max-width: 1024px) {
   .dynamicPageText {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
-
-  @media (max-width: 640px) {
-    .dynamicPageText {
-      font-size: 1rem;
-    }
-  }
-
-  @media (max-width: 1024px) {
-    .dynamicPageText {
-      font-size: 1rem;
-    }
-  }
-  
+}
