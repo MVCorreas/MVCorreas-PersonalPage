@@ -129,6 +129,11 @@
   font-size: 1.3rem;
 }
 
+.logoImage {
+  margin-bottom: 50px;
+  border-radius: 10px;
+}
+
 .iconContainer {
   display: flex;
   gap: 1rem;

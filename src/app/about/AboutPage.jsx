@@ -95,6 +95,14 @@ const AboutContent = () => {
       <br />
 
       <div ref={(el) => (sectionsRef.current[2] = el)} className={`hidden ${styles.socialSection}`}>
+        <Image 
+         src="/Logo.png"
+         alt="MVCorreasLogo"
+         width={100}
+         height={100}
+         priority
+         className={styles.logoImage}
+        />
         <p className={styles.socialText}>Let's get in touch</p>
         <div className={styles.iconContainer}>
           <Link href="https://github.com/MVCorreas">
