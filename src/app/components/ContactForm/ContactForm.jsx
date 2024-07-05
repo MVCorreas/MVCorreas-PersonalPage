@@ -60,6 +60,7 @@ const ContactForm = () => {
             alt="contactImage"
             width={500} 
             height={500}
+            priority
             className={styles.contactImage}
           />
         </div>

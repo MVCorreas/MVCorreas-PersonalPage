@@ -23,6 +23,7 @@ const AboutContent = () => {
             alt="Image 1"
             width={500}
             height={500}
+            priority
             className={`${styles.image} ${styles.vertical}`}
           />
           <Image
@@ -30,6 +31,7 @@ const AboutContent = () => {
             alt="Image 2"
             width={500}
             height={500}
+            priority
             className={`${styles.image} ${styles.vertical}`}
           />
           <Image
@@ -37,6 +39,7 @@ const AboutContent = () => {
             alt="Image 3"
             width={500}
             height={500}
+            priority
             className={`${styles.image} ${styles.horizontal}`}
           />
           <Image
@@ -44,6 +47,7 @@ const AboutContent = () => {
             alt="Image 4"
             width={500}
             height={500}
+            priority
             className={`${styles.image} ${styles.horizontal}`}
           />
         </div>
@@ -93,6 +97,7 @@ const AboutContent = () => {
           alt="aboutImage"
           width={900}
           height={900}
+          priority
           className={styles.inspirationImage}
         />
         <div className={styles.inspirationText}>

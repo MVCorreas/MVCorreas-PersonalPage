@@ -45,6 +45,7 @@ const Navbar = () => {
           alt="profileImage"
           width={80} 
           height={80}
+          priority
           className={styles.profileImage}
         />
       
