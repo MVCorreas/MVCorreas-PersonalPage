@@ -2,7 +2,6 @@
   color: #374151;
   display: flex;
   flex-direction: column;
-
   max-height: fit-content;
   padding-top: 40px;
   overflow: visible;
@@ -27,7 +26,7 @@
 
 .contactImage {
   width: 80%;
-  height: 80vh;
+  height: 100vh;
   border-radius: 10px;
   object-fit: cover;
   margin-left: 30px;
@@ -43,7 +42,7 @@
 .title {
   font-size: 2.5rem;
   font-weight: 200;
-  color: #b3074f;
+  color: #45076f;
   margin-bottom: 1rem;
 }
 
@@ -67,6 +66,8 @@
 
 .formLabel {
   font-size: 1.3rem;
+  color: #45076f;
+  font-weight: bold;
 }
 .inputField {
   width: 100%;

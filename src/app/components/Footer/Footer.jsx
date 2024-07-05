@@ -14,13 +14,13 @@ const Footer = () => {
         </span>
         <div className={styles.iconContainer}>
           <Link href="https://github.com/MVCorreas">
-            <GithubIcon color={"#b3074f"} width={50} height={50} />
+            <GithubIcon color={"#19053A"} width={50} height={50} />
           </Link>
           <Link
             href="https://www.linkedin.com/in/mar%C3%ADa-victoria-correas-148049b2/"
             className={styles.icon}
           >
-            <LinkedInIcon color={"#b3074f"} width={50} height={50} />
+            <LinkedInIcon color={"#19053A"} width={50} height={50} />
           </Link>
         </div>
       </div>

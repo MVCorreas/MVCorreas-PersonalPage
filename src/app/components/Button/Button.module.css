@@ -6,7 +6,7 @@
 }
 
 .button {
-  background-color: #b3074f;
+  background-color: #2E1557;
   height: 80px;
   width: 200px;
   color: white;
@@ -20,7 +20,7 @@
 }
 
 .button:hover {
-  background-color: #e34889;
+  background-color: #8D79AE;
 }
 
 @media (max-width: 768px) {
