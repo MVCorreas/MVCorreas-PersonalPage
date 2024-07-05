@@ -28,7 +28,7 @@ const interests = [
   {
     id: 4,
     title: 'Nature',
-    description: 'I take pleasure in pausing my hectic life for a minute, and observe. I find peace and harmony in the warmth of the day, watch the leaves musically dance to the wind, and allow myself to drift into silence.  ',
+    description: 'I take pleasure in pausing my hectic life for a minute, and observing. I find peace and harmony in the warmth of the day, watch the leaves musically dance to the wind, and allow myself to drift into silence.  ',
     image: '/Nature.jpg'
   },
   {

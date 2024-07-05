@@ -67,7 +67,7 @@ const AboutContent = () => {
               <br />
               I enrolled in several Moodle courses, discovered outstanding online resources, and creatively transformed my virtual classrooms into interactive storybooks with engaging interfaces for students of all ages. My efforts made life easier for my students and their parents, making English both fun and accessible with a single click. My classes became purposeful and enjoyable, igniting my passion for technology and its relentless pursuit of our well-being.
               <br />
-              My journey as a developer began shortly afterward. After completing several courses in programming languages, I graduated as a Full Stack Developer in January 2024. I have not paused once to take a break. Each of my days is fueled by a thirst for learning and contributing to the dazzling world that technology offers today. And I cherish each one of those days.
+              My journey as a developer began shortly afterward. After completing several courses in programming languages, I graduated as a Full Stack Developer in January 2024. I have not paused once to take a break. Each of my days is fuelled by a thirst for learning and contributing to the dazzling world that technology offers today. And I cherish each one of those days.
             </p>
           </div>
         </div>
