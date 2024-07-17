@@ -103,7 +103,7 @@ const AboutContent = () => {
          priority
          className={styles.logoImage}
         />
-        <p className={styles.socialText}>Let's get in touch</p>
+        <p className={styles.socialText}>Let&apos;s get in touch</p>
         <div className={styles.iconContainer}>
           <Link href="https://github.com/MVCorreas">
             <LinkedInIcon color="black" width={50} height={50} />
