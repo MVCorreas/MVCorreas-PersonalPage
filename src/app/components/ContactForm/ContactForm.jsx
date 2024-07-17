@@ -70,7 +70,7 @@ const ContactForm = () => {
         <div className={styles.content}>
           <h5 className={styles.title}>Let's Connect</h5>
           <p className={styles.description}>
-            I would love to hear your story! You can contact me and I'll get back to you asap.
+            I would love to hear your story! You can contact me and  I will get back to you asap.
           </p>
           <div className={styles.formContainer}>
             {!showThanksMessage ? (
@@ -128,7 +128,7 @@ const ContactForm = () => {
                     id="message"
                     required
                     className={`${styles.inputField} ${messageError ? styles.inputError : ''}`}
-                    placeholder="Let's talk about..."
+                    placeholder="..."
                     value={message}
                     onChange={(e) => {
                       setMessage(e.target.value);
