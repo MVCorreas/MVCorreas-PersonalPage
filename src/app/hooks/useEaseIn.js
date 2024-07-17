@@ -16,14 +16,16 @@ const useEaseIn = () => {
       { threshold: 0.1 }
     );
 
-    sectionsRef.current.forEach((section) => {
+    const currentSections = sectionsRef.current;
+
+    currentSections.forEach((section) => {
       if (section) {
         observer.observe(section);
       }
     });
 
     return () => {
-      sectionsRef.current.forEach((section) => {
+      currentSections.forEach((section) => {
         if (section) {
           observer.unobserve(section);
         }
